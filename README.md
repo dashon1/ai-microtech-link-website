@@ -49,3 +49,11 @@ Based in Clearwater, Florida, serving:
 ---
 
 *Website created with MiniMax Agent*
+
+## Setup
+
+Add setup steps for this stack.
+
+## Verify
+
+Add verification command(s).
