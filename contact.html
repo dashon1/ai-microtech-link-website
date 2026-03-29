@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | AI Microtech Link</title>
+  <meta name="description" content="Contact AI Microtech Link — AI development solutions based in Clearwater, Florida." />
+  <link rel="canonical" href="https://aimicrotechlink.com/contact" />
+  <link rel="icon" type="image/png" href="images/ai_microtech_favicon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 40px 20px; color: #333; line-height: 1.7; background: #fff; }
+    h1 { color: #1a1a2e; border-bottom: 2px solid #e91e8c; padding-bottom: 10px; }
+    a { color: #e91e8c; }
+    .back { margin-bottom: 30px; }
+    label { display: block; font-weight: 600; margin-bottom: 4px; margin-top: 18px; }
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+      width: 100%; padding: 10px 12px; border: 1px solid #ccc; border-radius: 6px;
+      font-size: 15px; font-family: inherit;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    .consent-row {
+      display: flex; align-items: flex-start; gap: 10px;
+      background: #f9f0ff; border: 1px solid #e91e8c; border-radius: 6px;
+      padding: 14px 16px; margin-top: 22px;
+    }
+    .consent-row input[type="checkbox"] { margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer; accent-color: #e91e8c; }
+    .consent-row label { font-weight: normal; margin: 0; font-size: 14px; color: #333; }
+    .privacy-note { font-size: 13px; color: #666; margin-top: 10px; }
+    button[type="submit"] {
+      margin-top: 26px; background: #e91e8c; color: #fff; border: none;
+      padding: 12px 32px; border-radius: 6px; font-size: 16px; font-weight: 600;
+      cursor: pointer; transition: background 0.2s;
+    }
+    button[type="submit"]:hover { background: #c2006e; }
+    .success { display: none; background: #e6f9ee; border: 1px solid #34a853; border-radius: 6px; padding: 16px; margin-top: 20px; color: #1a6632; }
+  </style>
+</head>
+<body>
+  <div class="back"><a href="/">&larr; Back to AI Microtech Link</a></div>
+  <h1>Contact Us</h1>
+  <p>Have a question or want to learn more about our AI solutions? Fill out the form below and we'll get back to you shortly.</p>
+
+  <form id="contactForm" action="https://formspree.io/f/support@aimicrotechlink.com" method="POST" novalidate>
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+
+    <div class="consent-row">
+      <input type="checkbox" id="sms_consent" name="sms_consent" value="yes" />
+      <label for="sms_consent">
+        I agree to receive automated text messages from AI Microtechlink Inc. if my call is missed or for support inquiries. I understand that I can reply STOP to opt out at any time. Msg &amp; data rates may apply.
+      </label>
+    </div>
+    <p class="privacy-note">
+      Consent is not a condition of purchase. By submitting this form you agree to our
+      <a href="/privacy-policy" target="_blank">Privacy Policy</a> and
+      <a href="/terms" target="_blank">Terms &amp; Conditions</a>.
+    </p>
+
+    <button type="submit">Send Message</button>
+    <div class="success" id="successMsg">Thanks! Your message has been sent. We'll be in touch soon.</div>
+  </form>
+
+  <hr style="margin:40px 0; border:none; border-top:1px solid #eee;" />
+  <p>
+    <strong>AI Microtech Link</strong><br>
+    Clearwater, Florida<br>
+    Email: <a href="mailto:support@aimicrotechlink.com">support@aimicrotechlink.com</a><br>
+    Website: <a href="https://aimicrotechlink.com">aimicrotechlink.com</a>
+  </p>
+</body>
+</html>
